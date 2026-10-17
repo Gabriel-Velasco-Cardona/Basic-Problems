@@ -1,6 +1,8 @@
-palabra = input("Ingrese una palabra que contenga a: ").lower()
+palabra = input("Ingrese una frase: ")
 contador = 0
-for letra in palabra: 
-    if letra == "a":
-        contador +=1
-print("La letra a aparece ",contador," veces")
+
+for letra in palabra.lower(): 
+    if letra in "aeiou":
+        contador += 1
+
+print("Las vocales aparecen un total de", contador, "veces")
